@@ -9,7 +9,9 @@
 		</div>
 		<div class="col-xs-6">
 			<ul class="list-group">
-				<li class="list-group-item" *ngFor="let playlistItem of videoService.playlist; let i = index" (click)="videoService.selectedVideo(i)">{{ playlistItem.title }}</li>
+				<li class="list-group-item" 
+					*ngFor="let playlistItem of videoService.playlist; let i = index" 
+					(click)="videoService.selectedVideo(i)">{{ playlistItem.title }}</li>
 			</ul>
 		</div>
 	</div>
